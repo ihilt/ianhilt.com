@@ -1,9 +1,23 @@
 @tailwind base;
 @tailwind components;
 
-h1,
+nav * {
+  transition: all 200ms;
+}
+
 p {
-  @apply mb-4;
+  @apply font-mono mb-4;
+}
+
+.link {
+  background-image: linear-gradient(transparent calc(100% - 2px), #000 2px);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: all 200ms;
+}
+
+.link:hover {
+  background-size: 100% 100%;
 }
 
 @tailwind utilities;

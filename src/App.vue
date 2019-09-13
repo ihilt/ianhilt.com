@@ -1,18 +1,18 @@
 <template>
-  <div class="absolute inset-0 flex justify-center items-center bg-gray-200">
-    <main class="container m-4">
-      <section class="flex flex-col bg-gray-100 md:flex-row shadow-lg p-4 md:p-6 lg:p-8">
-        <div class="rounded-lg overflow-hidden my-4 md:my-0 md:mr-6 lg:mr-8 self-center">
-          <a href="https://github.com/ihilt"><img class="w-32" alt="Avatar" src="https://avatars1.githubusercontent.com/u/279639"></a>
-        </div>
-        <div>
-          <h1 class="font-sans text-3xl text-gray-700">Hi!</h1>
-          <p class="font-mono">I'm Ian Hilt and I'm a full stack developer.</p>
-          <p class="font-mono">Stay tuned as I'll be updating this site in the near future.</p>
-          <p class="font-mono">In the meantime, you can get in touch <a class="underline" href="https://sc-techservices.com/contact-us/">here</a>
-          or <a class="underline" href="https://twitter.com/ianhilt">here</a>.</p>
-        </div>
-      </section>
-    </main>
+  <div id="app" class="bg-gray-200 h-full">
+    <nav class="py-4 px-6 bg-gray-100 shadow">
+      <div class="container flex mx-auto">
+        <router-link to="/">
+          <img v-if="$route.path == '/'" class="border-2 border-gray-400 rounded-full w-24 mr-8" alt="Avatar" src="https://avatars1.githubusercontent.com/u/279639">
+          <img v-else class="border-2 border-gray-400 rounded-full w-12 mr-8" alt="Avatar" src="https://avatars1.githubusercontent.com/u/279639">
+        </router-link>
+        <ul class="text-black -mx-4 self-center">
+          <li class="inline-block px-4"><router-link class="link font-bold opacity-50 hover:opacity-100" to="work">Work</router-link></li>
+          <li class="inline-block px-4"><router-link class="link font-bold opacity-50 hover:opacity-100" to="articles">Articles</router-link></li>
+        </ul>
+      </div>
+    </nav>
+    <router-view />
   </div>
 </template>
+

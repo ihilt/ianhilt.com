@@ -1,0 +1,10 @@
+{
+  "work": [
+    {
+      "id": "webapp-callcenter",
+      "date": "September 13, 2019",
+      "title": "Building a web application around an Asterisk call center",
+      "description": "A description"
+    }
+  ]
+}
