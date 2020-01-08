@@ -1,0 +1,23 @@
+@tailwind base;
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";
+
+section a {
+  @apply underline;
+}
+
+h2 {
+  @apply font-sans text-3xl text-gray-700;
+}
+
+@tailwind components;
+@tailwind utilities;
