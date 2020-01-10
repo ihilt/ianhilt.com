@@ -19,5 +19,42 @@ h2 {
   @apply font-sans text-3xl text-gray-700;
 }
 
+.screen-reader-text {
+  @apply sr-only;
+}
+
+.nav-links {
+  @apply flex justify-center mt-10;
+}
+
+%link {
+  @apply relative outline-none overflow-hidden cursor-pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: theme("colors.gray.700");
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+  }
+
+  &:hover::before {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
+}
+
+.nav-previous,
+.nav-next {
+  @extend %link;
+
+  @apply mx-4;
+}
+
 @tailwind components;
 @tailwind utilities;

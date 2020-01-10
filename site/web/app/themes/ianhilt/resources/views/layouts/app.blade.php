@@ -1,7 +1,7 @@
 <!doctype html>
 <html {!! get_language_attributes() !!}>
   @include('partials.head')
-  <body @php body_class(['bg-gray-200', 'h-full']) @endphp>
+  <body @php body_class(['bg-gray-200', 'h-full', 'mb-10']) @endphp>
     @php do_action('get_header') @endphp
     <nav class="py-4 px-6 bg-gray-100 shadow">
       <div class="container flex mx-auto">
