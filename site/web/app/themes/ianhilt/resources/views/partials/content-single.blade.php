@@ -4,7 +4,7 @@
       <h1 class="entry-title font-mono font-bold text-3xl">{!! get_the_title() !!}</h1>
       @include('partials/entry-meta')
     </header>
-    <div class="entry-content font-mono mt-5">
+    <div class="entry-content tracking-wide mt-5">
       @php the_content() @endphp
     </div>
     <footer>
