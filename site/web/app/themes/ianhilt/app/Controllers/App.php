@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use Log1x\Navi\Navi;
 use Sober\Controller\Controller;
 
 class App extends Controller
@@ -29,5 +30,10 @@ class App extends Controller
             return __('Not Found', 'sage');
         }
         return get_the_title();
+    }
+
+    public function navigation()
+    {
+        return (new Navi())->build('primary_navigation')->toArray();
     }
 }

@@ -1,4 +1,4 @@
-<article @php post_class(['mx-auto', 'max-w-5xl', 'mt-5', 'p-5', 'bg-gray-100']) @endphp>
+<article @php post_class(['mx-auto', 'max-w-5xl', 'mt-5', 'p-5', 'bg-gray-100', 'shadow']) @endphp>
   <div>
     <header>
       <h1 class="entry-title font-mono font-bold text-3xl">{!! get_the_title() !!}</h1>
