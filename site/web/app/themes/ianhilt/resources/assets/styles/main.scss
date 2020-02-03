@@ -62,7 +62,8 @@ h2 {
   }
 }
 
-.entry-content {
+.entry-content,
+.page-content {
   a {
     @apply underline;
   }
