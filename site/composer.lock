@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "565bbc8a20abe3d6c4b8273110f244c2",
+    "content-hash": "a9d2e9007bc9313b0ebf7a33ab473c05",
     "packages": [
         {
             "name": "composer/installers",
@@ -570,15 +570,15 @@
         },
         {
             "name": "wpackagist-plugin/autodescription",
-            "version": "4.0.4",
+            "version": "4.0.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autodescription/",
-                "reference": "tags/4.0.4"
+                "reference": "tags/4.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autodescription.4.0.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/autodescription.4.0.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -606,15 +606,15 @@
         },
         {
             "name": "wpackagist-plugin/syntax-highlighting-code-block",
-            "version": "1.1.3",
+            "version": "1.2.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/syntax-highlighting-code-block/",
-                "reference": "tags/1.1.3"
+                "reference": "tags/1.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/syntax-highlighting-code-block.1.1.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/syntax-highlighting-code-block.1.2.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
