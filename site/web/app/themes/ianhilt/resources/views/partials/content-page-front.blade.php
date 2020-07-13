@@ -1,7 +1,7 @@
-<div class="flex justify-center items-center">
+<div class="flex items-center justify-center">
   <main class="container mt-4">
-    <section class="flex flex-col bg-gray-100 md:flex-row shadow-lg p-4 md:p-6 lg:p-8">
-      <div class="tracking-wide">
+    <section class="flex flex-col p-4 bg-gray-100 shadow-lg md:flex-row md:p-6 lg:p-8">
+      <div class="tracking-wide entry-content">
         @php the_content() @endphp
       </div>
     </section>
